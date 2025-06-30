@@ -36,14 +36,12 @@ public class Main {
 
 //       3. Write a Java program to get the larger value between first and last
 //        element of an array of integers.
-        int[] numbers3 = {20, 30, 40};
-        int max = 0;
-        for (int i = 0; i < numbers3.length; i++) {
-            if (i == 0){
-                max = numbers3[0];
-            } else if (max <= numbers3[i]) {
-                max = numbers3[i];
-            }
+        int[] numbers3 = {20, 40, 30};
+        int max;
+        if (numbers3[0] >= numbers3[numbers3.length-1]){
+            max = numbers3[0];
+        }else{
+            max = numbers3[numbers3.length-1];
         }
         System.out.println("Larger value is: "+ max);
 
@@ -101,12 +99,12 @@ public class Main {
        first_array.add(6);
        first_array.add(4);
        ArrayList<Integer> second_array = new ArrayList<>();
-        second_array.add(2);
-        second_array.add(3);
-        second_array.add(6);
-        second_array.add(6);
-        second_array.add(4);
-        System.out.println(first_array.equals(second_array));
+       second_array.add(2);
+       second_array.add(3);
+       second_array.add(6);
+       second_array.add(6);
+       second_array.add(4);
+       System.out.println(first_array.equals(second_array));
 
 
     }
